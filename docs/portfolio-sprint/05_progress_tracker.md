@@ -17,17 +17,17 @@
 - M3 All sections — first pass (desktop): Done
 - M4 All sections — responsive (mobile/tablet): Done
 - M5 Animations and interactions: Done
-- M6 Contact form — end-to-end: Not Started
+- M6 Contact form — end-to-end: Done
 - M7 Content finalized (no placeholders): Done (personal details filled, CV PDF uploaded)
-- M8 Lighthouse ≥ 95: Not Started
-- M9 Deployment gate — live on Vercel: Not Started
+- M8 Lighthouse ≥ 95: In Progress
+- M9 Deployment gate — live on Vercel: In Progress
 - M10 Final QA and sign-off: Not Started
 
 ## Current Focus
-- Task: Phase 6 — Deployment, SEO, Contact form wiring, Go-Live
-- Checkpoint: Gate C approved, Phase 6 in progress
-- Next actions: Wire Resend API, OG image route, sitemap, robots
-- Open questions requiring human input: Resend API key needed for contact form
+- Task: Phase 7 — Final QA, Lighthouse audit, Gate E preparation
+- Checkpoint: Gate D approved, all content finalized, Phase 6 complete
+- Next actions: Lighthouse audit on production URL, OG preview check, final QA
+- Open questions requiring human input: Vercel production URL needed for Lighthouse
 
 ## SESSION START: 2026-03-22
 - Read: Sprint prompt (kelechi-portfolio-sprint_v1_0.md)

@@ -17,7 +17,7 @@
 - Gate A approved by: Kelechi | Date: 2026-03-22
 - Gate B approved by: Kelechi | Date: 2026-03-22
 - Gate C approved by: Kelechi | Date: 2026-03-22
-- Gate D approved by: | Date:
+- Gate D approved by: Kelechi | Date: 2026-03-22
 - Gate E approved by: | Date:
 - Gate F approved by: | Date:
 

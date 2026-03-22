@@ -155,6 +155,7 @@ export default function Contact() {
                   <input
                     id="name"
                     type="text"
+                    autoComplete="name"
                     {...register("name")}
                     className="w-full rounded-md border border-border bg-bg-primary px-4 py-2.5 font-body text-sm text-text-primary outline-none transition-colors focus:border-accent placeholder:text-text-muted"
                     placeholder="Your name"
@@ -175,6 +176,7 @@ export default function Contact() {
                   <input
                     id="email"
                     type="email"
+                    autoComplete="email"
                     {...register("email")}
                     className="w-full rounded-md border border-border bg-bg-primary px-4 py-2.5 font-body text-sm text-text-primary outline-none transition-colors focus:border-accent placeholder:text-text-muted"
                     placeholder="you@company.com"
