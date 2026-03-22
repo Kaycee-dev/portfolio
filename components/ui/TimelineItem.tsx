@@ -27,7 +27,7 @@ export default function TimelineItem({
   isActive,
 }: TimelineItemProps) {
   return (
-    <div className="relative pl-8 pb-12 last:pb-0">
+    <div className="relative pl-0 md:pl-8 pb-12 last:pb-0">
       {/* Timeline line (hidden on mobile) */}
       <div className="absolute left-0 top-0 bottom-0 hidden w-px bg-border md:block" />
 

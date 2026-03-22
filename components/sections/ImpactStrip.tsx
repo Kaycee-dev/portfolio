@@ -10,7 +10,7 @@ export default function ImpactStrip() {
         {impactNumbers.map((stat, i) => (
           <div
             key={stat.label}
-            className={`flex flex-col items-center gap-2 px-4 py-10 text-center ${
+            className={`flex flex-col items-center gap-1.5 px-3 py-8 text-center sm:gap-2 sm:px-4 sm:py-10 ${
               i < impactNumbers.length - 1
                 ? "lg:border-r lg:border-border"
                 : ""
@@ -22,7 +22,7 @@ export default function ImpactStrip() {
               suffix={stat.suffix}
               decimals={stat.decimals}
             />
-            <p className="font-body text-sm font-medium uppercase tracking-wider text-text-primary">
+            <p className="font-body text-xs font-medium uppercase tracking-wider text-text-primary sm:text-sm">
               {stat.label}
             </p>
             <p className="font-mono text-[11px] text-text-muted">

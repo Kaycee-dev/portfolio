@@ -4,6 +4,7 @@ import { IBM_Plex_Mono } from "next/font/google";
 import { Geist } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import MotionProvider from "@/components/layout/MotionProvider";
 import "./globals.css";
 
 const syne = Syne({
@@ -83,9 +84,11 @@ export default function RootLayout({
       className={`${syne.variable} ${ibmPlexMono.variable} ${geist.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-bg-primary text-text-primary">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <MotionProvider>
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </MotionProvider>
       </body>
     </html>
   );

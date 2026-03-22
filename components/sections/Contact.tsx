@@ -77,7 +77,7 @@ export default function Contact() {
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
             className="space-y-6"
           >
-            <h3 className="font-display text-4xl font-bold text-text-primary">
+            <h3 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
               Let&apos;s work together.
             </h3>
             <p className="font-body text-text-secondary leading-relaxed">

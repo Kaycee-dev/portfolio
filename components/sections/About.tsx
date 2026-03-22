@@ -29,7 +29,7 @@ export default function About() {
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
           >
             <blockquote className="border-l-4 border-accent pl-6">
-              <p className="font-display text-2xl leading-relaxed text-text-primary sm:text-[28px]">
+              <p className="font-display text-xl leading-relaxed text-text-primary sm:text-2xl md:text-[28px]">
                 I build financial data systems that produce results banks can measure.
               </p>
             </blockquote>

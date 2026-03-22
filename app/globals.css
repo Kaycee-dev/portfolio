@@ -56,3 +56,18 @@ body {
   background: var(--accent);
   color: #080D1A;
 }
+
+/* Custom focus ring for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Hide scrollbar on cert scroll track (mobile) */
+.snap-x::-webkit-scrollbar {
+  display: none;
+}
+.snap-x {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

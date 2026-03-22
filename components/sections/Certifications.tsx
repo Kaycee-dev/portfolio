@@ -24,8 +24,8 @@ export default function Certifications() {
           />
         </motion.div>
 
-        {/* Certs grid */}
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {/* Certs grid — horizontal scroll on mobile, wrapped grid on desktop */}
+        <div className="-mx-6 flex gap-4 overflow-x-auto px-6 pb-4 snap-x snap-mandatory sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-3">
           {certifications.map((cert, i) => (
             <motion.div
               key={cert.name}
@@ -36,7 +36,7 @@ export default function Certifications() {
                 delay: 0.1 + i * 0.08,
                 ease: "easeOut",
               }}
-              className="rounded-lg border border-border bg-bg-card p-4"
+              className="min-w-[220px] shrink-0 snap-start rounded-lg border border-border bg-bg-card p-4 sm:min-w-0 sm:shrink"
             >
               <BadgeCheck size={20} className="mb-2 text-accent" />
               <p className="font-display text-[15px] font-bold text-text-primary">

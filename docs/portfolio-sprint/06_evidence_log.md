@@ -26,3 +26,13 @@
 - Result: All checks pass. Commit pushed to GitHub. Vercel deploy triggered.
 - Visual / functional outcome: Minimal page with name/title renders on dark background with correct fonts and colors.
 - Risks / follow-up: Vercel project must be created/connected manually (Phase 0.4). Personal contact details still needed (STOP AND ASK).
+
+## E-004 — Phase 2+3 Complete — All Sections Implemented
+- Date: 2026-03-22
+- Scope: Phase 2 (Layout Shell) + Phase 3 (All Sections)
+- Files changed: 24 files (commit d8f979c)
+- Commands run: `pnpm build`, `pnpm lint`, `npx tsc --noEmit`
+- Result: All pass. 8 sections + Navbar + Footer + 6 UI components + useCountUp hook implemented.
+- Components built: Navbar (scroll-spy, mobile drawer), Footer, Hero (staggered reveal, code block), ImpactStrip (animated counters), About (pull-quote, education), Skills (categorized pills), Experience (timeline + CommendationBadge), Projects (3 cards with highlight badge), Certifications (grid + education block), Contact (form with Zod validation)
+- Visual / functional outcome: Full site renders at desktop with all content from portfolio.ts.
+- Risks / follow-up: Responsive pass needed (Phase 4). Contact form wired to stub API (Resend integration Phase 6). Zod v4 enum API differs from v3 — used `message` instead of `required_error`.

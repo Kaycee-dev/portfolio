@@ -7,10 +7,10 @@ export const personal = {
   title: "Senior Data Engineer · Backend & Fullstack Developer",
   tagline:
     "I build financial data systems that produce results banks can measure.",
-  email: "[EMAIL]", // STOP AND ASK if not provided
-  phone: "[PHONE]", // STOP AND ASK if not provided
-  location: "[CITY, COUNTRY]", // STOP AND ASK if not provided
-  linkedin: "[LINKEDIN_URL]",
+  email: "kelechiuba@proton.me",
+  phone: "+2348138056429",
+  location: "Lagos, Nigeria",
+  linkedin: "https://www.linkedin.com/in/kelechi-uba-8368aa126/",
   github: "https://github.com/Kaycee-dev",
   cvPath: "/cv/Kelechi_Uba_CV.pdf",
 };

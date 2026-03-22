@@ -45,7 +45,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-32">
+      <div className="relative mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-24 sm:py-32">
         {/* Left content */}
         <div className="max-w-2xl">
           <motion.p
@@ -59,7 +59,7 @@ export default function Hero() {
           <motion.h1
             {...fadeUp}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="font-display text-5xl font-bold leading-tight text-text-primary sm:text-6xl lg:text-[80px] lg:leading-[1.05]"
+            className="font-display text-4xl font-bold leading-tight text-text-primary sm:text-5xl md:text-6xl lg:text-[80px] lg:leading-[1.05]"
           >
             {personal.name}
           </motion.h1>
@@ -67,7 +67,7 @@ export default function Hero() {
           <motion.p
             {...fadeUp}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="mt-4 font-body text-xl text-text-secondary"
+            className="mt-3 font-body text-lg text-text-secondary sm:text-xl sm:mt-4"
           >
             {personal.title}
           </motion.p>
@@ -75,7 +75,7 @@ export default function Hero() {
           <motion.p
             {...fadeUp}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="mt-2 font-body text-lg italic text-text-secondary"
+            className="mt-1.5 font-body text-base italic text-text-secondary sm:text-lg sm:mt-2"
           >
             {personal.tagline}
           </motion.p>
@@ -83,7 +83,7 @@ export default function Hero() {
           <motion.div
             {...fadeUp}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="mt-8 flex flex-wrap gap-4"
+            className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:gap-4"
           >
             <a
               href={personal.cvPath}
