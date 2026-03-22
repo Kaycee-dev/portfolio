@@ -17,3 +17,12 @@
 - Result: Node 22.20.0 · pnpm 10.32.1 · Next.js 16.2.1
 - Visual / functional outcome: N/A
 - Risks / follow-up: Next.js 16 instead of 15 — documented in D-001.
+
+## E-003 — Phase 0 Complete — Baseline Commit Pushed
+- Date: 2026-03-22
+- Scope: Phase 0 — Full initialization
+- Files changed: 35 files (see commit 2c39fa8)
+- Commands run: `pnpm build`, `pnpm lint`, `npx tsc --noEmit`, `git push origin main`
+- Result: All checks pass. Commit pushed to GitHub. Vercel deploy triggered.
+- Visual / functional outcome: Minimal page with name/title renders on dark background with correct fonts and colors.
+- Risks / follow-up: Vercel project must be created/connected manually (Phase 0.4). Personal contact details still needed (STOP AND ASK).
