@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  /* Color system */
+  --bg-primary: #080D1A;
+  --bg-secondary: #0E1628;
+  --bg-card: #131D35;
+  --border: #1E2D4F;
+  --border-bright: #2E4A7A;
+  --text-primary: #E8EDF5;
+  --text-secondary: #8A9BBC;
+  --text-muted: #4A5A7A;
+  --accent: #F59E0B;
+  --accent-dim: #92610A;
+  --highlight: #3B82F6;
+
+  /* Typography */
+  --font-display: var(--font-syne);
+  --font-body: var(--font-geist);
+  --font-mono: var(--font-ibm-plex-mono);
+}
+
+@theme inline {
+  /* Colors */
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-card: var(--bg-card);
+  --color-border: var(--border);
+  --color-border-bright: var(--border-bright);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-accent-dim: var(--accent-dim);
+  --color-highlight: var(--highlight);
+
+  /* Font families */
+  --font-display: var(--font-syne);
+  --font-body: var(--font-geist);
+  --font-mono: var(--font-ibm-plex-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--accent);
+  color: #080D1A;
+}
