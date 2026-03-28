@@ -116,7 +116,7 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className="lg:hidden text-text-primary"
+          className="relative z-[70] lg:hidden text-text-primary"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
         >
@@ -127,7 +127,7 @@ export default function Navbar() {
       {/* Mobile drawer */}
       <div
         className={cn(
-          "fixed inset-0 top-0 z-40 flex flex-col items-center justify-center gap-8 bg-bg-primary/95 backdrop-blur-md transition-all duration-300 lg:hidden",
+          "fixed inset-0 z-[60] flex flex-col items-center justify-center gap-8 bg-bg-primary transition-all duration-300 lg:hidden",
           mobileOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"

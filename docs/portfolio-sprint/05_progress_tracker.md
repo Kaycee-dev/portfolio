@@ -19,8 +19,8 @@
 - M5 Animations and interactions: Done
 - M6 Contact form — end-to-end: Done
 - M7 Content finalized (no placeholders): Done (personal details filled, CV PDF uploaded)
-- M8 Lighthouse ≥ 95: In Progress
-- M9 Deployment gate — live on Vercel: In Progress
+- M8 Lighthouse ≥ 95: Done (P:97 A:96 BP:100 SEO:100)
+- M9 Deployment gate — live on Vercel: Done — https://portfolio-coral-beta-66.vercel.app
 - M10 Final QA and sign-off: Not Started
 
 ## Current Focus

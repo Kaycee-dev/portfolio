@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kelechi Michael Uba — Data Engineer & Backend Developer",
     description:
-      "Led analytics systems delivering ₦20B+ in savings. Available for data engineering and backend roles.",
+      "Senior data engineer who led the analytics engine behind ₦20B+ in savings at UBA. Specialising in Oracle pipelines, Python automation, and financial systems.",
     type: "website",
     locale: "en_GB",
     url: process.env.NEXT_PUBLIC_SITE_URL,
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kelechi Michael Uba — Data Engineer & Backend Developer",
     description:
-      "Led analytics systems delivering ₦20B+ in savings. Available for data engineering and backend roles.",
+      "Senior data engineer who led the analytics engine behind ₦20B+ in savings at UBA. Specialising in Oracle pipelines, Python automation, and financial systems.",
     images: ["/og"],
   },
   robots: { index: true, follow: true },

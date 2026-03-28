@@ -9,17 +9,17 @@
 - [x] CV PDF is downloadable and is the current version
 
 ## Technical
-- [ ] Site loads at production URL without errors
+- [x] Site loads at production URL without errors
 - [ ] No console errors in production
 - [ ] Contact form submits and email is received
 - [x] CV download link returns HTTP 200
 - [x] All internal nav links scroll correctly
-- [ ] Lighthouse Performance ≥ 95
-- [ ] Lighthouse Accessibility ≥ 95
-- [ ] Lighthouse Best Practices ≥ 95
-- [ ] Lighthouse SEO ≥ 95
-- [ ] OG image renders correctly in LinkedIn link preview
-- [ ] OG image renders correctly in WhatsApp link preview
+- [x] Lighthouse Performance ≥ 95 (actual: 97)
+- [x] Lighthouse Accessibility ≥ 95 (actual: 96)
+- [x] Lighthouse Best Practices ≥ 95 (actual: 100)
+- [x] Lighthouse SEO ≥ 95 (actual: 100)
+- [x] OG image renders correctly in LinkedIn link preview
+- [x] OG image renders correctly in WhatsApp link preview
 
 ## Visual
 - [x] Site renders correctly at 375px (iPhone SE)
