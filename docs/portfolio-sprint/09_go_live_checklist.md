@@ -10,8 +10,8 @@
 
 ## Technical
 - [x] Site loads at production URL without errors
-- [ ] No console errors in production
-- [ ] Contact form submits and email is received
+- [x] No console errors in production
+- [x] Contact form submits and email is received
 - [x] CV download link returns HTTP 200
 - [x] All internal nav links scroll correctly
 - [x] Lighthouse Performance ≥ 95 (actual: 97)
@@ -34,6 +34,6 @@
 ## Deployment
 - [x] GitHub repo is public (or private — Kelechi's choice)
 - [x] Vercel auto-deploy is enabled on main branch
-- [ ] Environment variables set in Vercel dashboard (not in code)
+- [x] Environment variables set in Vercel dashboard (not in code)
 - [x] .env.local is in .gitignore and not committed
 - [x] .env.example is committed with placeholder values only

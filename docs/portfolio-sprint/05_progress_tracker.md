@@ -21,7 +21,7 @@
 - M7 Content finalized (no placeholders): Done (personal details filled, CV PDF uploaded)
 - M8 Lighthouse ≥ 95: Done (P:97 A:96 BP:100 SEO:100)
 - M9 Deployment gate — live on Vercel: Done — https://portfolio-coral-beta-66.vercel.app
-- M10 Final QA and sign-off: Not Started
+- M10 Final QA and sign-off: Done — Gate F approved 2026-03-28
 
 ## Current Focus
 - Task: Phase 7 — Final QA, Lighthouse audit, Gate E preparation
