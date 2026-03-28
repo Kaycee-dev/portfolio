@@ -66,68 +66,70 @@ export default function Navbar() {
   }, [mobileOpen, closeMobile]);
 
   return (
-    <header
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled
-          ? "bg-bg-secondary/90 backdrop-blur-md border-b border-border"
-          : "bg-transparent"
-      )}
-    >
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        {/* Logo */}
-        <a
-          href="#"
-          className="font-display text-2xl font-bold text-accent"
-          aria-label="Kelechi Uba — Home"
-        >
-          KU
-        </a>
+    <>
+      <header
+        className={cn(
+          "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+          scrolled
+            ? "bg-bg-secondary/90 backdrop-blur-md border-b border-border"
+            : "bg-transparent"
+        )}
+      >
+        <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+          {/* Logo */}
+          <a
+            href="#"
+            className="font-display text-2xl font-bold text-accent"
+            aria-label="Kelechi Uba — Home"
+          >
+            KU
+          </a>
 
-        {/* Desktop Nav */}
-        <ul className="hidden items-center gap-8 lg:flex">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className={cn(
-                  "font-body text-sm transition-colors duration-200",
-                  activeSection === link.href.slice(1)
-                    ? "text-accent"
-                    : "text-text-secondary hover:text-text-primary"
-                )}
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+          {/* Desktop Nav */}
+          <ul className="hidden items-center gap-8 lg:flex">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className={cn(
+                    "font-body text-sm transition-colors duration-200",
+                    activeSection === link.href.slice(1)
+                      ? "text-accent"
+                      : "text-text-secondary hover:text-text-primary"
+                  )}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
 
-        {/* Desktop CTA */}
-        <a
-          href={personal.cvPath}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden items-center gap-2 rounded-md bg-accent px-4 py-2 font-body text-sm font-medium text-bg-primary transition-colors hover:bg-accent-dim lg:flex"
-        >
-          <Download size={14} />
-          Download CV
-        </a>
+          {/* Desktop CTA */}
+          <a
+            href={personal.cvPath}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden items-center gap-2 rounded-md bg-accent px-4 py-2 font-body text-sm font-medium text-bg-primary transition-colors hover:bg-accent-dim lg:flex"
+          >
+            <Download size={14} />
+            Download CV
+          </a>
 
-        {/* Mobile hamburger */}
-        <button
-          className="relative z-[70] lg:hidden text-text-primary"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label={mobileOpen ? "Close menu" : "Open menu"}
-        >
-          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </nav>
+          {/* Mobile hamburger */}
+          <button
+            className="relative z-[70] lg:hidden text-text-primary"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          >
+            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </nav>
+      </header>
 
-      {/* Mobile drawer */}
+      {/* Mobile drawer — outside header to avoid containing-block trap from backdrop-blur / transition */}
       <div
         className={cn(
-          "fixed inset-0 z-[60] flex flex-col items-center justify-center gap-8 bg-bg-primary transition-all duration-300 lg:hidden",
+          "fixed inset-0 z-[60] flex flex-col items-center justify-center gap-8 bg-bg-primary transition-opacity duration-300 lg:hidden",
           mobileOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -159,6 +161,6 @@ export default function Navbar() {
           Download CV
         </a>
       </div>
-    </header>
+    </>
   );
 }
