@@ -117,9 +117,12 @@ export default function Navbar() {
 
           {/* Mobile hamburger */}
           <button
+            type="button"
             className="relative z-[70] lg:hidden text-text-primary"
-            onClick={() => setMobileOpen(!mobileOpen)}
+            onClick={() => setMobileOpen((open) => !open)}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-navigation"
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -128,13 +131,22 @@ export default function Navbar() {
 
       {/* Mobile drawer — outside header to avoid containing-block trap from backdrop-blur / transition */}
       <div
+        id="mobile-navigation"
         className={cn(
-          "fixed inset-0 z-[60] flex flex-col items-center justify-center gap-8 bg-bg-primary transition-opacity duration-300 lg:hidden",
+          "fixed inset-0 z-[60] flex flex-col items-center justify-center gap-8 bg-bg-primary px-6 transition-opacity duration-300 lg:hidden",
           mobileOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
         )}
       >
+        <button
+          type="button"
+          onClick={closeMobile}
+          aria-label="Close menu"
+          className="absolute top-6 right-6 flex h-11 w-11 items-center justify-center rounded-full border border-border bg-bg-secondary/90 text-text-primary backdrop-blur-sm transition-colors hover:text-accent"
+        >
+          <X size={22} />
+        </button>
         {navLinks.map((link) => (
           <a
             key={link.href}
