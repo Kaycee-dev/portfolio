@@ -119,7 +119,7 @@ export default function Hero() {
                 5for5_campaign_engine.py
               </span>
             </div>
-            <pre className="font-mono text-[12px] leading-relaxed text-text-secondary/70 select-none">
+            <pre className="max-w-full overflow-hidden whitespace-pre-wrap break-words font-mono text-[12px] leading-relaxed text-text-secondary/70 select-none">
               {codeSnippet}
             </pre>
             <span className="inline-block h-4 w-1.5 animate-pulse bg-accent/60" />
